@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>404</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: #08090b;
+    color: #b9bcc4;
+    font: 15px/1.9 ui-monospace, SFMono-Regular, Menlo, Consolas, "Noto Sans Mono CJK SC", monospace;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    overflow: hidden;
+  }
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(0deg, rgba(255,255,255,.018) 0 1px, transparent 1px 3px);
+    mix-blend-mode: screen;
+  }
+  main { max-width: 46ch; width: 100%; }
+  .code {
+    color: #4b5160;
+    letter-spacing: .35em;
+    font-size: 12px;
+    margin-bottom: 28px;
+  }
+  h1 {
+    font-size: clamp(20px, 5vw, 26px);
+    font-weight: 500;
+    letter-spacing: .12em;
+    color: #e6e8ee;
+    margin: 0 0 18px;
+  }
+  p { margin: 0 0 10px; }
+  .dim { color: #6d727d; }
+  .caret::after {
+    content: "";
+    display: inline-block;
+    width: .55em; height: 1em;
+    margin-left: .35em;
+    vertical-align: -.1em;
+    background: #62687a;
+    animation: blink 1.1s steps(1) infinite;
+  }
+  @keyframes blink { 50% { opacity: 0; } }
+  hr {
+    border: 0;
+    border-top: 1px solid #1a1d23;
+    margin: 26px 0 18px;
+  }
+  small { color: #4d525d; font-size: 12px; letter-spacing: .04em; }
+</style>
+</head>
+<body>
+<main>
+  <div class="code">HTTP 404 · NOT FOUND</div>
+  <h1>这里什么都没有。</h1>
+  <p>你要找的页面不存在，可能是地址打错了，</p>
+  <p>也可能是它从来就没有存在过。</p>
+  <hr>
+  <p class="dim caret">你可以关掉这个页面，或者原路返回</p>
+  <small>如果你确信地址没错，那大概就是这里确实什么都没有。</small>
+</main>
+</body>
+</html>
